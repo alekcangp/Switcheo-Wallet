@@ -1,0 +1,334 @@
+
+#pixie{position:fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+  background:url(../img/stars++.jpg) no-repeat center center fixed;
+  -webkit-background-size: 100%; 
+  -moz-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: 100%; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+::-webkit-scrollbar { /* chrome based */
+  width: 0px;  /* ширина scrollbar'a */
+  }
+
+    #vmwal {
+        animation: fadein 2s;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 2s; /* Safari and Chrome */
+        -o-animation: fadein 2s; /* Opera */
+    }
+    
+    @keyframes fadein {
+        from {opacity:0;}
+        to { opacity:1;}
+    }
+    @-moz-keyframes fadein { /* Firefox */
+        from { opacity:0; }
+        to {opacity:1;}
+    }
+    @-webkit-keyframes fadein { /* Safari and Chrome */
+        from {opacity:0;}
+        to { opacity:1;}
+    }
+    @-o-keyframes fadein { /* Opera */
+        from {opacity:0;}
+        to {opacity: 1;}
+    }
+
+   body {
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+    width:100%; height:100%;
+    background: #212A3F ;
+    color: skyblue;	
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  #head {
+    
+    background: rgba(0,0,0,0.3);
+    display:table;
+    margin: auto;
+    margin-bottom: 4px;
+    border: 1px solid darkcyan;
+    width: 986px;
+    height: 50px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .head {
+    background: transparent;
+    vertical-align: middle;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 325px;
+    height: 100%;
+    
+  }
+
+  .sp {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden; 
+  }
+
+  .spp {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden; 
+  }
+  .spp:hover {
+    text-shadow: 0px 0px 5px rgba(255,255,255,0.6);
+    cursor: pointer;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+
+  #content {
+    display:block;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    width: 1000px;
+    font-size: 0px;
+  }
+  
+  .tab {
+    display: inline-block; 
+    width: 325px; 
+    border: 1px solid darkcyan;
+    margin: 2px;
+  }
+
+  thead, tbody { display: block; width: 321px; }
+
+
+ td {
+  height: 21px;
+  outline-style: solid;
+  outline-color: #212A3F;
+  outline-width: 1px;
+  font-size: 17px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden; 
+  text-align: left;
+ }
+
+  tbody {
+  height: calc(100vh - 100px);       /* Just for the demo          */
+  overflow-y: auto ;    /* Trigger vertical scroll    */
+  scrollbar-width: none;
+  overflow-x: hidden;  /* Hide the horizontal scroll */
+}
+tbody tr {
+  background: rgba(0,0,0,0.3);
+}
+
+thead {
+  background: rgba(0,0,0,0.6);
+  font-size: 19px;
+}
+
+input {
+  display: none;
+}
+
+label {
+  cursor:pointer;
+}
+
+.com label:after {
+  content:'COMBINED';
+  color:dimgray;
+}
+ 
+.com input[type="checkbox"]:checked + label:after {
+  color: darkcyan;
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  -webkit-animation: pulsate 2.2s linear infinite;
+  animation: pulsate 2.2s linear infinite;
+}
+
+.chain label{
+  color:dimgray;
+}
+
+.chain input[type="radio"]:checked + label {
+  color: lightgreen;
+
+}
+
+tbody tr:hover {
+  text-shadow: 0px 0px 6px darkcyan;
+  cursor: pointer;
+  transition: 0.3s;
+  background: rgba(0,0,0,0.6);
+  
+}
+
+tr.wal:focus {
+  text-shadow: 0px 0px 6px darkcyan;;
+  cursor: pointer;
+  background: rgba(0,0,0,0.8);
+  transition: 0.3s;
+}
+
+.button {
+  font-size: 25px;
+  display: inline-block;
+  color: skyblue;
+}
+
+.button:hover {
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+textarea {
+  scrollbar-width: none;
+  margin-top: 8px;
+  background: transparent;
+  width: 340px;
+  height: 85px;
+  resize: none;
+  font-family: 'Pathway Gothic One', sans-serif; 
+  font-size: 19px;
+  color: skyblue;
+}
+
+ #intro {
+  position: absolute;
+  left: 0; right: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-top: 230px;
+  width: 370px;
+  height: 150px;
+  border: solid;
+  padding: 8px;
+  background: rgba(0,0,0,0.8);
+  color: darkcyan;
+  font-size: 19px;
+  display: block;
+  }
+
+ #adddel  {
+position: absolute;
+left: 0; right: 0;
+width: -moz-fit-content;
+width: -webkit-fit-content;
+width: fit-content;
+height: -moz-fit-content;
+height: -webkit-fit-content;
+height: fit-content;
+margin: auto;
+margin-top: 50px;
+width: 370px;
+height: 158px;
+border: solid;
+padding: 8px;
+background: rgba(0,0,0,0.8);
+color: darkcyan;
+font-size: 19px;
+display: block;
+}
+
+#intro:not([open]) {
+display: none;
+}
+
+#adddel:not([open]) {
+display: none;
+}
+
+dialog + .backdrop {
+position: fixed;
+top: 0; right: 0; bottom: 0; left: 0;
+background: rgba(0,0,0,0.1);
+}
+
+._dialog_overlay {
+position: fixed;
+top: 0; right: 0; bottom: 0; left: 0;
+}
+
+dialog.fixed {
+position: fixed;
+top: 50%;
+transform: translate(0, -50%);
+}
+
+
+[v-cloak] {
+  display: none;
+}
+
+
+
+@-webkit-keyframes pulsate {
+  50% { color:skyblue; text-shadow: 0 -1px rgba(0,0,0,.1), 0 0 1px skyblue, 0 0 2px skyblue; }
+ }
+ @keyframes pulsate {
+  50% { color: skyblue; text-shadow: 0 -1px rgba(0,0,0,.1), 0 0 1px skyblue, 0 0 2px skyblue; }
+ }
+ 
+
+/*
+[v-cloak] > * { display:none }
+[v-cloak]::before { content: "loading…" }
+
+
+[v-cloak] .v-cloak--block {
+  display: block!important;
+}
+
+[v-cloak] .v-cloak--inline {
+  display: inline!important;
+}
+
+[v-cloak] .v-cloak--inlineBlock {
+  display: inline-block!important;
+}
+
+[v-cloak] .v-cloak--hidden {
+  display: none!important;
+}
+
+[v-cloak] .v-cloak--invisible {
+  visibility: hidden!important;
+}
+
+.v-cloak--block,
+.v-cloak--inline,
+.v-cloak--inlineBlock {
+  display: none!important;
+}
+*/
