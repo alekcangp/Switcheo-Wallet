@@ -2,10 +2,7 @@
 Multi blockchain wallet
 <p align="center">>> <a href="http://switcheowallet.tech">http://switcheowallet.tech</a> <<</p>
 <p align="center"><img src="https://img.shields.io/badge/status-online-green.svg"></p>
-<p></p>
-![ScreenShort](https://raw.githubusercontent.com/alekcangp/Switcheo-Wallet/master/img/screen01.jpg)
-
 
 <p align="center">
-  <img src="img/screen01.jpg" width="350">
+  <img src="img/screen01.jpg" width="650">
 </p>
