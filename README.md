@@ -4,5 +4,5 @@ Multi blockchain wallet
 <p align="center"><img src="https://img.shields.io/badge/status-online-green.svg"></p>
 
 <p align="center">
-  <img src="img/screen01.jpg" width="650">
+  <img src="img/screen01.jpg">
 </p>
