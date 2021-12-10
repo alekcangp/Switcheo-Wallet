@@ -5,5 +5,5 @@ Multi blockchain wallet
 <p></p>
 ![ScreenShort](https://raw.githubusercontent.com/alekcangp/Switcheo-Wallet/master/img/screen01.jpg)
 
-![ScreenShort](https://github.com/alekcangp/Switcheo-Wallet/raw/master/img/screen01.jpg)
+![ScreenShort](https://github.com/alekcangp/Switcheo-Wallet/blob/master/img/screen01.jpg?raw=true)
 
